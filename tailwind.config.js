@@ -8,6 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors:{
+        highlight: "#FEE440",
+        dark: "#272833",
+        medium: "#353543",
+        light: "#E7F6F3"
       },
       animation: {
         'pulse-loader': 'pulsing 1s linear infinite',

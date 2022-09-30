@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import Header from '@/components/header/Header'
+import Footer from '@/components/footer/Footer'
 
 export default {
   name: 'WebLayout',
@@ -24,6 +24,7 @@ html {
   @apply
     overflow-x-hidden
     w-screen
+    bg-medium
   ;
 }
 </style>
