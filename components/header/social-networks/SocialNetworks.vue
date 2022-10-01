@@ -33,7 +33,7 @@ export default {
     w-auto
     flex-grow
     xl:flex-grow-0
-    xl:w-[calc(50%-60px)]
+    xl:w-[calc(50%-40px)]
   ;
 }
 </style>

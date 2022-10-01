@@ -26,9 +26,14 @@ export default {
     z-50
     top-0
     left-0
+    flex
+    flex-col
     w-full
     px-4
     bg-dark
+    border-b
+    border-light
+    border-opacity-20
   ;
 
   & .content{

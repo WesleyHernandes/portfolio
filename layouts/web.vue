@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="app">
     <Header />
     <Nuxt />
     <Footer />
@@ -26,5 +26,13 @@ html {
     w-screen
     bg-medium
   ;
+
+  & .app{
+    @apply
+      flex
+      flex-col
+      w-full
+    ;
+  }
 }
 </style>

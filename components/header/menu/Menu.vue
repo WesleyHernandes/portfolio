@@ -39,7 +39,7 @@ export default {
     justify-start
     gap-5
     w-auto
-    xl:w-[calc(50%-60px)]
+    xl:w-[calc(50%-40px)]
   ;
 
   & .control-menu{

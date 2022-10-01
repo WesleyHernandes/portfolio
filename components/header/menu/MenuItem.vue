@@ -30,7 +30,7 @@ export default {
     py-1
     xl:w-auto
     xl:px-0
-    xl:py-10
+    xl:py-6
   ;
 }
 </style>

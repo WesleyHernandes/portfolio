@@ -20,7 +20,6 @@ export default {
     flex-col
     w-full
     max-w-[80px]
-    xl:max-w-[120px]
   ;
 }
 </style>
