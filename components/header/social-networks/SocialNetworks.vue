@@ -1,6 +1,6 @@
 <template>
-  <section class="social-networks w-[calc(50%-60px)]">
-    <Network v-for="network in networks" :key="network.id" :label="network.label" :hook="network.hook" />
+  <section class="social-networks">
+    <Network v-for="network in networks" :key="network.id" :item="network" />
   </section>
 </template>
 
@@ -13,10 +13,10 @@ export default {
   data(){
     return{
       networks:[
-        { id: 1, label: 'Github', hook: "https://github.com/WesleyHernandes" },
-        { id: 2, label: 'Linkedin', hook: "https://www.linkedin.com/in/wesley-hernandes-386aa294/" },
-        { id: 3, label: 'Instagram', hook: "https://www.instagram.com/wesleyhernandesoliveira/" },
-        { id: 4, label: 'Facebook', hook: "https://www.facebook.com/wesley.hernandes/" }
+        { id: 1, label: 'Github', hook: "https://github.com/WesleyHernandes", icon:"github" },
+        { id: 2, label: 'Linkedin', hook: "https://www.linkedin.com/in/wesley-hernandes-386aa294/",  icon:"linkedin" },
+        { id: 3, label: 'Instagram', hook: "https://www.instagram.com/wesleyhernandesoliveira/", icon:"instagram" },
+        { id: 4, label: 'Facebook', hook: "https://www.facebook.com/wesley.hernandes/", icon:"facebook" }
       ]
     }
   }
@@ -30,6 +30,10 @@ export default {
     items-center
     justify-end
     gap-4
+    w-auto
+    flex-grow
+    xl:flex-grow-0
+    xl:w-[calc(50%-60px)]
   ;
 }
 </style>

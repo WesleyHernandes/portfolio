@@ -23,9 +23,14 @@ export default {
   @apply
     flex
     flex-col
-    py-10
+    w-full
     text-light
     font-medium
+    px-5
+    py-1
+    xl:w-auto
+    xl:px-0
+    xl:py-10
   ;
 }
 </style>

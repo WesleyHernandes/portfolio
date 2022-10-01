@@ -1,6 +1,6 @@
 <template>
   <section class="header">
-    <div class="content max-w-[1600px]">
+    <div class="content">
       <Menu />
       <Logo />
       <SocialNetworks />
@@ -37,8 +37,13 @@ export default {
       items-center
       justify-between
       w-full
+      max-w-[1600px]
       my-0
       mx-auto
+      py-1
+      gap-4
+      xl:py-0
+      xl:gap-0
     ;
   }
 }
