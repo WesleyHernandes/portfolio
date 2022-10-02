@@ -64,7 +64,10 @@ export default {
     items-center
     w-full
     px-4
-    pt-[76px]
+    pt-12
+    pb-12
+    sm:pt-[76px]
+    sm:pb-0
   ;
 
   & .content{
@@ -110,14 +113,20 @@ export default {
     & .description{
       @apply
         flex
+        flex-col
         items-end
-        justify-between
+        justify-center
         w-full
+        gap-4
+        sm:gap-0
+        sm:flex-row
+        lg:justify-between
       ;
 
       & .perfil-thumbnail{
-        @appy
-          flex
+        @apply
+          hidden
+          lg:flex
           flex-col
           w-full
           max-w-[405px]
@@ -135,9 +144,12 @@ export default {
         @apply
           flex
           flex-col
-          w-[calc(50%-202.5px)]
-          gap-14
-          pb-28
+          w-full
+          sm:w-auto
+          lg:w-[calc(50%-202.5px)]
+          gap-4
+          sm:pb-28
+          sm:gap-14
         ;
 
         & .item{
@@ -154,6 +166,8 @@ export default {
               text-xl
               font-bold
               tracking-wider
+              text-center
+              sm:text-left
             ;
           }
 
@@ -162,6 +176,8 @@ export default {
               text-light
               text-lg
               tracking-wider
+              text-center
+              sm:text-left
             ;
           }
         }
@@ -171,7 +187,8 @@ export default {
             & .text,
             & .subtext{
               @apply
-                text-right
+                text-center
+                sm:text-right
               ;
             }
           }

@@ -18,7 +18,7 @@
       <div class="dash"></div>
 
       <div class="skills-content">
-        <Tag v-for="skill in skills" :key="skill.id" :text="skill.text" />
+        <Tag v-for="(skill, i) in skills" :key="i" :text="skill.text" />
       </div>
     </div>
   </section>
@@ -118,21 +118,28 @@ export default {
       relative
       z-10
       flex
+      flex-col
       items-center
       justify-between
       w-full
       max-w-[1600px]
       mx-auto
-      py-24
-      gap-4
+      py-12
+      gap-9
+      xl:gap-4
+      xl:flex-row
+      xl:py-24
     ;
 
     & .dash{
       @apply
         flex
-        w-[2px]
-        min-h-[500px]
+        w-full
+        max-w-[640px]
+        min-h-[2px]
         bg-highlight
+        xl:min-h-[500px]
+        xl:w-[2px]
       ;
     }
 
@@ -151,6 +158,8 @@ export default {
           flex-col
           w-full
           gap-3
+          text-center
+          xl:text-left
         ;
 
         & .title{
@@ -179,7 +188,15 @@ export default {
           text-light
           text-base
           tracking-wider
+          gap-4
         ;
+
+        & p{
+          @apply
+            text-center
+            xl:text-left
+          ;
+        }
       }
     }
 
@@ -188,10 +205,12 @@ export default {
         flex
         flex-wrap
         items-start
-        justify-start
+        justify-center
         w-full
         max-w-[640px]
-        gap-5
+        gap-2
+        xl:gap-5
+        xl:justify-start
       ;
     }
   }

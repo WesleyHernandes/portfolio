@@ -21,14 +21,17 @@ export default {
     items-center
     justify-center
     w-max
-    py-3
-    px-4
+    py-2
+    px-3
+    text-xs
     text-dark
-    text-base
     font-semibold
     tracking-widest
     bg-light
     rounded-[10px]
+    xl:py-3
+    xl:px-4
+    xl:text-base
   ;
 }
 </style>
