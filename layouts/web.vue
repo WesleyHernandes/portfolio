@@ -23,7 +23,7 @@ export default {
 html {
   @apply
     overflow-x-hidden
-    w-screen
+    w-full
     bg-medium
   ;
 

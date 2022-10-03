@@ -83,19 +83,24 @@ export default {
     flex
     flex-col
     w-full
-    py-28
     px-4
+    py-12
+    lg:py-28
   ;
 
   & .content{
     @apply
       flex
+      flex-col
       items-center
-      justify-between
       w-full
       max-w-[1600px]
-      gap-28
       mx-auto
+      gap-8
+      lg:items-center
+      lg:justify-between
+      lg:flex-row
+      xl:gap-28
     ;
 
     & .dash{
@@ -104,9 +109,9 @@ export default {
         w-full
         max-w-[640px]
         min-h-[2px]
+        lg:min-h-[500px]
+        lg:w-[2px]
         bg-highlight
-        xl:min-h-[500px]
-        xl:w-[2px]
       ;
     }
 
@@ -232,26 +237,31 @@ export default {
       & .project{
         @apply
           flex
+          flex-col
           items-center
           justify-start
           w-full
           p-5
-          gap-7
+          gap-4
           bg-dark
           border
           border-light
           border-solid
           border-opacity-30
           rounded-xl
+          sm:gap-7
+          sm:flex-row
         ;
 
         & .title-content{
           @apply
             flex
             flex-col
+            items-center
             w-full
             max-w-[150px]
             gap-1
+            sm:items-start
           ;
 
           & .title{
@@ -260,6 +270,8 @@ export default {
               text-xl
               font-bold
               tracking-wider
+              text-center
+              sm:text-left
             ;
           }
 
@@ -268,14 +280,18 @@ export default {
               text-light
               text-base
               tracking-wider
+              text-center
+              sm:text-left
             ;
           }
         }
 
         & .divider{
           @apply
-            w-[2px]
-            h-[70px]
+            w-[70px]
+            h-[2px]
+            sm:w-[2px]
+            sm:h-[70px]
             bg-highlight
           ;
         }
@@ -283,10 +299,16 @@ export default {
         & .description{
           @apply
             flex
-            items-center
-            justify-start
+            flex-col
             flex-grow
             gap-4
+            w-full
+            text-center
+            sm:text-left
+            sm:w-auto
+            sm:items-center
+            sm:justify-start
+            sm:flex-row
           ;
 
           & .text{
@@ -301,9 +323,13 @@ export default {
           & .options{
             @apply
               flex
-              flex-col
-              w-8
+              flex-row
+              justify-center
+              w-full
               gap-1
+              sm:justify-start
+              sm:flex-col
+              sm:w-8
             ;
 
             & .option{
