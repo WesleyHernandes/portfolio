@@ -97,8 +97,9 @@ export default {
       @apply
         w-[845px]
         h-[845px]
-        -left-1/4
+        left-0
         -bottom-1/2
+        -translate-x-1/4
       ;
     }
 
@@ -106,9 +107,10 @@ export default {
       @apply
         w-[665px]
         h-[665px]
-        -right-1/4
+        right-0
         top-1/2
         -translate-y-1/2
+        translate-x-1/3
       ;
     }
   }

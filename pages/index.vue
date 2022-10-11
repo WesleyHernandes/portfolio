@@ -3,6 +3,7 @@
     <About />
     <Skills />
     <Projects />
+    <Schooling />
   </section>
 </template>
 
@@ -10,10 +11,11 @@
 import About from '@/components/home/About'
 import Skills from '@/components/home/Skills'
 import Projects from '@/components/home/Projects'
+import Schooling from '@/components/home/Schooling'
 
 export default {
   name: 'IndexPage',
-  components: { About, Skills, Projects },
+  components: { About, Skills, Projects, Schooling },
   layout (context) {
     return 'web'
   }
