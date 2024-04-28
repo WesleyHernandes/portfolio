@@ -35,3 +35,9 @@ body {
   font-weight: 400;
   letter-spacing: 0.1rem;
 }
+
+.dash {
+  display: flex;
+  width: 2px;
+  background-color: var(--highlight);
+}

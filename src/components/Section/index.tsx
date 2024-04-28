@@ -26,18 +26,18 @@ export default function Section({ children, position }: SectionProps) {
 
   return (
     <section className="overflow-hidden relative flex flex-col w-full min-h-screen py-[100px] px-4 bg-[var(--dark)]">
+      <div className="relative z-20 flex flex-col w-full">{children}</div>
+
       <div
-        className={`absolute flex w-[44%] left-0 aspect-square opacity-50 bg-[var(--medium)] rounded-full ${
+        className={`absolute z-10 flex w-[44%] left-0 aspect-square opacity-50 bg-[var(--medium)] rounded-full ${
           getPosition().before
         }`}
       />
       <div
-        className={`absolute flex w-[34%] right-0 aspect-square opacity-50 bg-[var(--medium)] rounded-full ${
+        className={`absolute z-10 flex w-[34%] right-0 aspect-square opacity-50 bg-[var(--medium)] rounded-full ${
           getPosition().after
         }`}
       />
-
-      {children}
     </section>
   );
 }

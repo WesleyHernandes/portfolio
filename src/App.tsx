@@ -1,11 +1,16 @@
 import Section from "./components/Section";
-import Tag from "./components/Tag";
+import Selector from "./components/Selector";
 
 function App() {
   return (
     <main className="flex flex-col w-full min-h-screen">
       <Section position="TRHEE">
-        <Tag label="HTML5" />
+        <Selector
+          active
+          icon="calendar"
+          title="Lorem ipsum"
+          subtitle="dolor sit amet"
+        />
       </Section>
     </main>
   );
