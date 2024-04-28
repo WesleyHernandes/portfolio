@@ -25,7 +25,7 @@ export default function Section({ children, position }: SectionProps) {
   };
 
   return (
-    <section className="overflow-hidden relative flex flex-col w-full min-h-screen py-100 bg-[var(--dark)]">
+    <section className="overflow-hidden relative flex flex-col w-full min-h-screen py-[100px] px-4 bg-[var(--dark)]">
       <div
         className={`absolute flex w-[44%] left-0 aspect-square opacity-50 bg-[var(--medium)] rounded-full ${
           getPosition().before

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Section, { SectionProps } from "./Section";
+import Section, { SectionProps } from "./index";
 
 export default {
   title: "Section",

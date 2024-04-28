@@ -3,12 +3,35 @@
 @tailwind utilities;
 
 :root {
+  font-family: "Poppins", sans-serif;
   --highlight: #fee440;
   --dark: #272833;
   --medium: #353543;
   --text: #e7f6f3;
+  --container: 1597px;
 }
 
 body {
   margin: 0;
+}
+
+.title {
+  color: var(--highlight);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.subtitle {
+  color: var(--text);
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.text {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
 }
