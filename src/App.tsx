@@ -1,15 +1,16 @@
+import Project from "./components/Project";
 import Section from "./components/Section";
-import Selector from "./components/Selector";
 
 function App() {
   return (
     <main className="flex flex-col w-full min-h-screen">
       <Section position="TRHEE">
-        <Selector
-          active
-          icon="calendar"
-          title="Lorem ipsum"
-          subtitle="dolor sit amet"
+        <Project
+          type="E-commerce"
+          name="Mondabelle"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum facilisis dolor, ac consectetur dui volutpat eget."
+          github="123"
+          link="123"
         />
       </Section>
     </main>
