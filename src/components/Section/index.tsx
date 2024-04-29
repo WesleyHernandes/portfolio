@@ -14,7 +14,7 @@ export default function Section({ children, position }: SectionProps) {
       case "TWO":
         return {
           before: "bottom-0 -translate-x-1/3 translate-y-1/3",
-          after: "top-0 translate-x-1/2 translate-y-1/2",
+          after: "top-1/2 translate-x-1/2 -translate-y-1/2",
         };
       case "TRHEE":
         return {
@@ -25,7 +25,7 @@ export default function Section({ children, position }: SectionProps) {
   };
 
   return (
-    <section className="overflow-hidden relative flex flex-col w-full min-h-screen py-[100px] px-4 bg-[var(--dark)]">
+    <section className="overflow-hidden relative flex flex-col justify-center w-full min-h-screen py-12 lg:py-[100px] px-4 bg-[var(--dark)]">
       <div className="relative z-20 flex flex-col w-full">{children}</div>
 
       <div
